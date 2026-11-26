@@ -26,7 +26,7 @@ const travel = async (req, res) => {
 
             // Verify that the API returned an array
             if (!Array.isArray(json)) {
-                massage = 'API response was not an array';
+                message = 'API response was not an array';
                 json = [];
             }else if (json.length === 0) {
                 message = 'No trips found in the database';
